@@ -1,3 +1,4 @@
+print("welcome to morse code translation")
 while True:
     options = input("enter 1 for encryption, 2 for decryption, and 0 to exit: ")
     if options == "1":
