@@ -1,6 +1,6 @@
-print("welcome to morse code translation")
-while True:
-    options = input("enter 1 for encryption, 2 for decryption, and 0 to exit: ")
+print("Welcome to morse code translation application")
+while True: 
+    options = input("enter 1 to encrypt from english to morse code, 2 to decrypt from morse code to english, and 0 to exit the application: ")
     if options == "1":
         english_to_morse_dict = {
             'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
@@ -25,10 +25,10 @@ while True:
             '---...': ':', '-.-.-.': ';', '-...-': '=', '.-.-.': '+', '-....-': '-', '..--.-': '_', '.-..-.': '"',
             '...-..-': '$', '.--.-.': '@', '/': ' '}
         text = input("enter a text to decrypt: ")
-        decrypted_message = " ".join(morse_to_english_dict.get(char, "") for char in text.split())
+        decrypted_message = " ".join(morse_to_english_dict.get(char, "") for char in text.split()) #this is to joi
         print(decrypted_message)
     elif options == "0":
         break
     else:
-        print("option does not exist")
+        print("option does not exist") 
         
