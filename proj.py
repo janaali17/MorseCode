@@ -26,7 +26,7 @@ while True: #this while loop is used so that the applications keeps going until 
             '...-..-': '$', '.--.-.': '@', '/': ' '}
         text = input("enter a text to decrypt: ")
         decrypted_message = " ".join(morse_to_english_dict.get(char, "") for char in text.split()) #this is to joi
-        print(decrypted_message)
+        print("your decyrpted text is : " ,decrypted_message)
     elif options == "0":
         break
     else:
