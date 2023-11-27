@@ -28,7 +28,7 @@ while True: #this while loop is used so that the applications keeps going until 
         decrypted_message = " ".join(morse_to_english_dict.get(char, "") for char in text.split()) #this is to joi
         print("your decyrpted text is : " ,decrypted_message)
     elif options == "0":
-        break
+        break #this is to exit the app
     else:
         print("option does not exist") 
         
