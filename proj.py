@@ -12,8 +12,8 @@ while True: #this while loop is used so that the applications keeps going until 
             ':': '---...', ';': '-.-.-.', '=': '-...-', '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.',
             '$': '...-..-', '@': '.--.-.', ' ': '/'}
         text = input("enter a text to encrypt: ")
-        text = " ".join(english_to_morse_dict.get(char, "") for char in text.upper())
-        print("your encyrpted text is : " ،text)
+        text = " ".join(english_to_morse_dict.get(char, "") for char in text.upper()) #.upper
+        print("your encyrpted text is : " ,text)
     elif options == "2": #if the user clicks 2 then the application is going to decrypt
         morse_to_english_dict = {
             '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F', '--.': 'G', '....': 'H',
@@ -25,7 +25,7 @@ while True: #this while loop is used so that the applications keeps going until 
             '---...': ':', '-.-.-.': ';', '-...-': '=', '.-.-.': '+', '-....-': '-', '..--.-': '_', '.-..-.': '"',
             '...-..-': '$', '.--.-.': '@', '/': ' '}
         text = input("enter a text to decrypt: ")
-        decrypted_message = " ".join(morse_to_english_dict.get(char, "") for char in text.split()) #this is to joi
+        decrypted_message = "".join(morse_to_english_dict.get(char, "") for char in text.split()) #this is to joi
         print("your decyrpted text is : " ,decrypted_message)
     elif options == "0":
         break #this is to exit the app
