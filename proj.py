@@ -14,7 +14,7 @@ while True: #this while loop is used so that the applications keeps going until 
         text = input("enter a text to encrypt: ")
         text = " ".join(english_to_morse_dict.get(char, "") for char in text.upper())
         print("your encyrpted text is : " ،text)
-    elif options == "2":
+    elif options == "2": #if the user clicks 2 then the application is going to decrypt
         morse_to_english_dict = {
             '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F', '--.': 'G', '....': 'H',
             '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L', '--': 'M', '-.': 'N', '---': 'O', '.--.': 'P',
