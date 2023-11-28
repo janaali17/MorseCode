@@ -1,5 +1,5 @@
 
-print("Welcome to morse code translation application") #this is gonna print a welcome message to the user when he runs the code
+print("Welcome to morse code translation application") #this is gonna print a welcome message to the user when the code runs
 while True: #this while loop is used so that the applications keeps running until the user chooses 0 to exit
     options = input("enter 1 to encrypt from english to morse code, 2 to decrypt from morse code to english, and 0 to exit the application: ") #this asks the user to enter an input (Option) to start the process
     if options == "1": #if user enter "1" the commands below runs encryption translation
