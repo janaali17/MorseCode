@@ -30,6 +30,6 @@ while True: #this while loop is used so that the applications keeps running unti
         print("your decyrpted text is : " ,decrypted_message) #this prints "your decyrpted text is: " then the 'decyrpted_message'
     elif options == "0": # if the user enters "0" then the program 'breaks' in other word exits
         break #this is to exit the app
-    else: # any other 
+    else: # any other input the user enters 
         print("option does not exist") 
         
