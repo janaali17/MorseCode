@@ -1,3 +1,4 @@
+
 print("Welcome to morse code translation application")
 while True: #this while loop is used so that the applications keeps going until the user chooses 0 to exit
     options = input("enter 1 to encrypt from english to morse code, 2 to decrypt from morse code to english, and 0 to exit the application: ")
@@ -12,10 +13,10 @@ while True: #this while loop is used so that the applications keeps going until 
             ':': '---...', ';': '-.-.-.', '=': '-...-', '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.',
             '$': '...-..-', '@': '.--.-.', ' ': '/'}
         text = input("enter a text to encrypt: ")
-        text = " ".join(english_to_morse_dict.get(char, "") for char in text.upper()) #.upper
+        text = " ".join(english_to_morse_dict.get(char, "") for char in text.upper())
         print("your encyrpted text is : " ,text)
-    elif options == "2": #if the user clicks 2 then the application is going to decrypt
-        morse_to_english_dict = {
+    elif options == "2": 
+        morse_to_english_dict = { #if the user clicks 2 then the application is going to decrypt
             '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F', '--.': 'G', '....': 'H',
             '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L', '--': 'M', '-.': 'N', '---': 'O', '.--.': 'P',
             '--.-': 'Q', '.-.': 'R', '...': 'S', '-': 'T', '..-': 'U', '...-': 'V', '.--': 'W', '-..-': 'X',
