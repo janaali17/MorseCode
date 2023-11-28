@@ -13,7 +13,7 @@ while True: #this while loop is used so that the applications keeps running unti
             ':': '---...', ';': '-.-.-.', '=': '-...-', '+': '.-.-.', '-': '-....-', '_': '..--.-', '"': '.-..-.',
             '$': '...-..-', '@': '.--.-.', ' ': '/'}
         text = input("enter a text to encrypt: ") #asks user to eneter input
-        encrypted_message = " ".join(english_to_morse_dict.get(char, "") for char in text.upper()) #this code line is used to take every character in the input that the user entered and look for it in the english to morse code dictionry and translate the input.
+        encrypted_message = " ".join(english_to_morse_dict.get(char, "") for char in text.upper()) #this code line is used to take every character in the input that the user entered and look for it in the english to morse code dictionry and translate the input. the '.upper' is used so that no matter what alphabet the user enters upper or lower case it is automatically switched to uppercase since the dictionary is in uppercase.
         print("your encyrpted text is : " ,encrypted_message) #this prints "your encyrpted text is: " then the 'encyrpted_message'
     elif options == "2": #the below commands run if the user enters "2" decryption translation
         morse_to_english_dict = { 
