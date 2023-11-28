@@ -28,8 +28,8 @@ while True: #this while loop is used so that the applications keeps running unti
         text = input("enter a text to decrypt: ") #asks the user to enter a message to decrypt s
         decrypted_message = "".join(morse_to_english_dict.get(char, "") for char in text.split()) 
         print("your decyrpted text is : " ,decrypted_message) #this prints "your decyrpted text is: " then the 'decyrpted_message'
-    elif options == "0":
+    elif options == "0": # if the user enters "0" then the program 'breaks' in other word exits
         break #this is to exit the app
-    else:
+    else: # any other 
         print("option does not exist") 
         
