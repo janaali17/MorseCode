@@ -25,7 +25,7 @@ while True: #this while loop is used so that the applications keeps running unti
             '..--..': '?', '.----.': "'", '-.-.--': '!', '-..-.': '/', '-.--.': '(', '-.--.-': ')', '.-...': '&',
             '---...': ':', '-.-.-.': ';', '-...-': '=', '.-.-.': '+', '-....-': '-', '..--.-': '_', '.-..-.': '"',
             '...-..-': '$', '.--.-.': '@', '/': ' '}
-        text = input("enter a text to decrypt: ") #asks the user 
+        text = input("enter a text to decrypt: ") #asks the user to enter a message to decrypt 
         decrypted_message = "".join(morse_to_english_dict.get(char, "") for char in text.split()) 
         print("your decyrpted text is : " ,decrypted_message)
     elif options == "0":
