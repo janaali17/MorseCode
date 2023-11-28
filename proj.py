@@ -3,7 +3,7 @@ print("Welcome to morse code translation application") #this is gonna print a we
 while True: #this while loop is used so that the applications keeps running until the user chooses 0 to exit
     options = input("enter 1 to encrypt from english to morse code, 2 to decrypt from morse code to english, and 0 to exit the application: ") #this asks the user to enter an input (Option) to start the process
     if options == "1": #if user enter "1"
-        english_to_morse_dict = { #this is the morse code, available on open sources  
+        english_to_morse_dict = { #this is the morse code each english letter or number or symbol is represented in a specific dots and dashes in morses 
             'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
             'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
             'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-',
