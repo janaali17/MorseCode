@@ -26,7 +26,7 @@ while True: #this while loop is used so that the applications keeps running unti
             '---...': ':', '-.-.-.': ';', '-...-': '=', '.-.-.': '+', '-....-': '-', '..--.-': '_', '.-..-.': '"',
             '...-..-': '$', '.--.-.': '@', '/': ' '}
         text = input("enter a text to decrypt: ") #asks the user to enter a message to decrypt s
-        decrypted_message = "".join(morse_to_english_dict.get(char, "") for char in text.split()) 
+        decrypted_message = "".join(morse_to_english_dict.get(char, "") for char in text.split()) #this code line is used to take every character in the input that the user entered and look for it in the morse code to english dictionry and translate the input. the '.split' is used so that when the user inputs the dots and dashes it does not translate multiple words as one word with no spaces. basically the '.split' is used to make sure the program understands each dot and dash seperately.
         print("your decyrpted text is : " ,decrypted_message) #this prints "your decyrpted text is: " then the 'decyrpted_message'
     elif options == "0": # if the user enters "0" then the program 'breaks' in other word exits
         break #this is to exit the app
